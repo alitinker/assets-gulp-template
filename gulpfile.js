@@ -87,7 +87,7 @@ gulp.task('watch', function () {
     // Files we want to watch
     toWatch: ['source/js/custom.js'],
     //Files we want to Browserify
-    toBrowserify: ['source/js/app.js']
+    toBrowserify: ['source/js/app.js','source/js/test-app.js']
   };
 
   gulp.watch(files.toWatch,function(event) {
@@ -96,7 +96,8 @@ gulp.task('watch', function () {
     var tasks = files.toBrowserify.map(function(entry) {
         return browserify({ entries: [entry], debug: true })
             .bundle()
-            .pipe(source(entry))
+            .pipe(source('app.js')) //change this parameter to entry to create multiple streams
+            .pipe(plugins.streamify(plugins.uglify({mangle: false})))
             .pipe(plugins.rename({
                 extname: '.bundle.js'
             }))
@@ -109,5 +110,11 @@ gulp.task('watch', function () {
             .pipe(gulp.dest('dist/js'));
         });
   });
+});
+
+gulp.task('compress', function() {
+  return gulp.src('lib/*.js')
+    .pipe(uglify())
+    .pipe(gulp.dest('dist'));
 });
 
