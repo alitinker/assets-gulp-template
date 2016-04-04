@@ -1,0 +1,30 @@
+@import "compass";
+@import "variables";
+@import "mixins";
+@import "compass/css3/flexbox";
+
+.svgs {
+	/* Flow with text content */
+	display: inline-block;
+	/* Inherit the parent text color */
+	fill: white;
+	/* Use the parent font-size for width and height */
+	height: 1em;
+	width: 1em;
+	/* Vertically align icon with adjacent text */
+	vertical-align: middle;
+	/* Align more nicely with capital letters */
+	position: relative;
+	top: -0.0625em;
+}
+
+body { 
+	background: #ffffff;
+	@include body-font-family;
+	-webkit-font-smoothing: antialiased;
+	-webkit-font-feature-settings: "kern";
+    -moz-font-feature-settings: "kern";
+    -moz-font-feature-settings: "kern=1";
+    text-rendering: optimizeLegibility;
+}
+

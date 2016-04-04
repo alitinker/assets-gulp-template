@@ -1,0 +1,27 @@
+cancel-circle:
+  title: Cancel
+  description: A cancel button in a circle
+
+facebook:
+  title: Facebook
+  description: The Facebook logo
+
+menu:
+  title: Menu
+  description: A hamburger menu
+
+play:
+  title: Play
+  description: A Play forward icon
+
+twitter:
+	title: Twitter
+	description: A twitter logo icon
+
+zoom-in:
+  title: Zoom In
+  description: Zoom in
+
+zoom-out:
+  title: Zoom Out
+  description: Zoom out
