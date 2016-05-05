@@ -1,12 +1,11 @@
 
 //colors
-$color-primary: #BB9236;
-$color-secondary: #3C4E5C;
+$color-primary: #CCCCCC; 
+$color-secondary: #000000;
+$color-accent: #FFFFFF; 
 
-//pretty fonts
-@import url(https://fonts.googleapis.com/css?family=Volkhov:400,400italic|Prata|Oswald:300,400|Halant);
+//sexy fonts
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans:400,600,700);
 
-$body-font: 'Halant';
-$h1-font: 'Prata';
-$h2-font: 'Prata';
-$h3-font: 'Oswald';
+$roboto-font: 'Roboto Slab';
+$garamond-font: 'Garamond';

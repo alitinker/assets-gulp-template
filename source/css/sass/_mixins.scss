@@ -1,20 +1,18 @@
-@mixin h3-font-family {
-	font-family: $h3-font, sans-serif;
-	font-weight: 400;
+@mixin roboto-font-family {
+  font-family: $roboto-font, serif;
+  font-weight: 400;
 }
 
-@mixin h2-font-family {
-	font-family: $h2-font, serif;
-	font-weight: normal;
+@mixin garamond-font-family {
+  font-family: $garamond-font, serif;
 }
 
-@mixin h1-font-family {
-	font-family: $h1-font, serif;
-	font-weight: normal;
-}
-
-@mixin body-font-family {
-	font-family: $body-font, serif;
+%transition {
+  -o-transition:.2s;
+  -ms-transition:.2s;
+  -moz-transition:.2s;
+  -webkit-transition:.2s;
+  transition:.2s;
 }
 
 //usage: @extend %clearfix;
@@ -39,4 +37,26 @@
   clip: rect(0 0 0 0);
   clip: rect(0, 0, 0, 0);
   position: absolute;
+}
+
+%svgicon {
+  /* Flow with text content */
+  display: inline-block;
+  /* Inherit the parent text color */
+  fill: white;
+  /* Use the parent font-size for width and height */
+  height: 1em;
+  width: 1em;
+  /* Vertically align icon with adjacent text */
+  vertical-align: middle;
+  /* Align more nicely with capital letters */
+  position: relative;
+  top: -0.0625em;
+}
+
+%background-cover {
+  -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
 }
