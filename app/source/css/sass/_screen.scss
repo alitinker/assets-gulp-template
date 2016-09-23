@@ -1,7 +1,5 @@
-@import "compass";
 @import "variables";
 @import "mixins";
-@import "compass/css3/flexbox";
 
 body { 
 	background: #ffffff;
@@ -11,5 +9,8 @@ body {
     -moz-font-feature-settings: "kern";
     -moz-font-feature-settings: "kern=1";
     text-rendering: optimizeLegibility;
+}
+.test {
+	color: #ccc;
 }
 
