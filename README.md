@@ -2,14 +2,17 @@
 Assets template for projects: Folder structure, gulpfile, package.json with dev dependencies.
 
 ## What it includes
-Browserified JS files, SVG icons and automated creation of an SVG icon sprite, image compression, minification for CSS files.
+Set JS and SASS files to watch and, optionally, different ones to compile. I've found this setup to be the most flexible for my various project workflows. The Gulp commands will Browserify JS files, automatically create an SVG icon sprite, compress images, and compile SASS files.
+
+## Watch JS and SASS files and compile them when files change
+Gulp task:
+
+  `$ gulp watch`
 
 ## SASS files
 Gulp task:
 
   `$ gulp styles`
-
-This will create the minified version of the css file to be used in production. This workflow prevents conflicts from occurring with the css files when merging a dev branch into master.
 
 ## Icons 
 Gulp task:
@@ -19,7 +22,7 @@ Gulp task:
 ## Javascript
 Gulp task:
 
-  `$ gulp watch`
+  `$ gulp browserify`
 
 ##Image compression
 
