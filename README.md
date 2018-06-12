@@ -24,7 +24,7 @@ Gulp task:
 
   `$ gulp browserify`
 
-##Image compression
+## Image compression
 
 Gulp task:
 
